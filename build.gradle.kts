@@ -19,8 +19,12 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
-	implementation ("org.springframework.boot:spring-boot-starter-web")
-	implementation ("org.springframework.boot:spring-boot-starter-actuator")
+	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
+
+	// Monitoring
+	implementation("io.micrometer:micrometer-bom:1.14.6")
+	implementation("io.micrometer:micrometer-registry-datadog")
 
 	implementation("me.paulschwarz:spring-dotenv:4.0.0")
 
